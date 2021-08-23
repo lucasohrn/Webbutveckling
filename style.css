@@ -1,0 +1,152 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-weight: 600;
+}
+
+.container
+{
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40em;
+}
+
+.first-box
+{/*
+    width: 600px;
+    height: 700px;
+    position: relative;
+    float: left;*/
+    grid-row: 1 / span 2;
+    background-color: #CBDDEA;
+    position: relative;
+    padding: 1em 5em;
+}
+
+.first-box h1
+{
+    margin-left: 110px;
+    margin-top: 100px;
+    margin-right: 120px;
+}
+
+.first-box p
+{
+    margin-left: 110px;
+    margin-right: 160px;
+    text-align: left;
+    color: #393939;
+}
+
+.first-box a
+{
+    display: inline-block;
+    margin-top: 60px;
+    padding: 1em 2em;
+    background: #fff;
+    color: #393939;
+    border-radius: 2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-left: 110px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.first-box p span
+{
+    color: #fff;
+}
+
+.first-box img
+{
+    width: 20em;
+    position: absolute;
+    right: 0em;
+    bottom: 0em;
+}
+
+.second-box
+{
+    background-color: #E37C4E;
+    text-align: center;
+}
+
+.second-box h2
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.second-box h2 a, .third-box h2 a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.second-box h2 a:hover, .third-box h2 a:hover
+{
+    text-decoration: underline;
+}
+
+.second-box h4
+{
+    margin-top: 150px;
+    color: #393939;
+    font-size: 0.8em;
+}
+
+.third-box
+{
+    background-color: #EFB13D;
+    text-align: center;
+}
+
+.third-box h2
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.third-box h4
+{
+    margin-top: 150px;
+    color: #393939;
+    font-size: 0.8em;
+}
+
+.second-box, .third-box
+{
+    text-align: center;
+    padding-top: 3em;
+}
+
+header
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header li a
+{
+    display: inline-block;
+    color: #393939;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 600;
+}
