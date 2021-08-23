@@ -10,21 +10,17 @@
 
 .container
 {
-    /*
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;*/
+    width: 1080px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 40em;
+    height: 46em;
 }
 
 .first-box
-{/*
-    width: 600px;
-    height: 700px;
-    position: relative;
-    float: left;*/
+{
+    width: 32em;
     grid-row: 1 / span 2;
     background-color: #CBDDEA;
     position: relative;
@@ -33,15 +29,16 @@
 
 .first-box h1
 {
-    margin-left: 110px;
-    margin-top: 100px;
-    margin-right: 120px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-style:inherit;
+    font-size: 2.5em;
 }
 
 .first-box p
 {
-    margin-left: 110px;
-    margin-right: 160px;
+    margin-top: 1em;
+    margin-right: 23px;
     text-align: left;
     color: #393939;
 }
@@ -49,7 +46,7 @@
 .first-box a
 {
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 5em;
     padding: 1em 2em;
     background: #fff;
     color: #393939;
@@ -57,8 +54,8 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    margin-left: 110px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
 }
 
 .first-box p span
@@ -149,4 +146,15 @@ header li a
     margin-left: 40px;
     text-decoration: none;
     font-weight: 600;
+}
+
+@media (max-width: 830px)
+{
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-box{
+        padding: 10em;
+    }
 }
